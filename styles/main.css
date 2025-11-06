@@ -94,6 +94,7 @@ header {
     li{
         flex-basis: 20%;
         text-align: center;
+        position: relative;
     }
     & > li:first-child a{
         margin-left: 0;
@@ -101,6 +102,7 @@ header {
     & > li:last-child a{
         margin-right: 0;
     }
+
     li:has(.submenu){
         position: relative;
     }
@@ -112,7 +114,7 @@ header {
     }
 }
 
-.submenu > li a{
+.submenu {
     margin-top: 0;
     margin-left: 1px;
     margin-right: 1px;
@@ -123,14 +125,9 @@ header {
     background-color: var(--accent-color);
     color: var(--menu-light-color);
     display: none;
+    list-style: none;
 }
 
-.menu > li:first-child a{
-    margin-left: 0;
-}
-.menu > li:last-child a{
-    margin-right: 0;
-}
 /* the styles for the main content */
 main {
 	display: flex;
